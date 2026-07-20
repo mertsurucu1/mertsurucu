@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kağan Mert Sürücü'nün yapay zekâ, mobil geliştirme, akademik çalışmaları ve projeleri hakkında bilgi edinin."
+    />
+    <meta name="theme-color" content="#07130f" />
+    <link rel="canonical" href="https://mertsurucu.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mert Sürücü — Kişisel AI Asistanı" />
+    <meta
+      property="og:description"
+      content="Mert Sürücü'nün eğitimi, deneyimleri, teknik becerileri ve projeleri hakkında kişisel asistanına sorun."
+    />
+    <meta property="og:url" content="https://mertsurucu.com/" />
+    <meta property="og:image" content="https://mertsurucu.com/public/assets/banner-hero.jpg" />
+    <title>Mert Sürücü — Kişisel AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- The loader stays on screen until app.js fetches the JSON QA file. -->
+    <div class="site-loader" id="siteLoader" role="status" aria-live="polite">
+      <div class="loader-mark" aria-hidden="true">
+        <img src="./public/assets/assistant-robot-wave.gif" alt="" />
+      </div>
+      <div class="loader-copy">
+        <p data-tr="Asistan hazırlanıyor" data-en="Preparing assistant">Asistan hazırlanıyor</p>
+        <div class="loader-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- One viewport contains the heading, chat panel and signature. -->
+    <main class="single-screen is-loading" id="app">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <button class="lang-toggle" type="button" aria-label="Dili değiştir">
+        <span class="active">TR</span><span>EN</span>
+      </button>
+
+      <div class="single-content">
+        <div class="single-heading">
+          <p class="welcome-line" data-tr="Hoş geldiniz." data-en="Welcome.">Hoş geldiniz.</p>
+          <h1>
+            <span data-tr="Mert Sürücü hakkında" data-en="Ask what you wonder">Mert Sürücü hakkında</span>
+            <em data-tr="merak ettiklerinizi sorun." data-en="about Mert Sürücü.">merak ettiklerinizi sorun.</em>
+          </h1>
+        </div>
+
+        <section class="chat-shell" aria-label="Mert AI sohbet alanı">
+          <!-- Messages are created safely with DOM text nodes in appendMessage(). -->
+          <div class="chat-log" id="chatLog" aria-live="polite"></div>
+
+          <div class="prompt-chips" id="promptChips">
+            <button type="button" data-question-tr="Mert’e nasıl ulaşabilirim?" data-question-en="How can I contact Mert?">
+              <span data-tr="Nasıl ulaşabilirim?" data-en="How can I reach him?">Nasıl ulaşabilirim?</span>
+            </button>
+            <button type="button" data-question-tr="Mert ne iş yapmaktadır?" data-question-en="What does Mert do?">
+              <span data-tr="Ne iş yapmaktadır?" data-en="What does he do?">Ne iş yapmaktadır?</span>
+            </button>
+            <button type="button" data-question-tr="Mert ne tür projelerde çalışmıştır?" data-question-en="What kind of projects has Mert worked on?">
+              <span data-tr="Ne tür projelerde çalışmıştır?" data-en="What projects has he worked on?">Ne tür projelerde çalışmıştır?</span>
+            </button>
+          </div>
+
+          <form class="chat-form" id="chatForm">
+            <label class="sr-only" for="chatInput">Sorunuzu yazın</label>
+            <input
+              id="chatInput"
+              name="question"
+              type="text"
+              autocomplete="off"
+              placeholder="Mert’in deneyimleri hakkında sor..."
+              data-placeholder-tr="Mert’in deneyimleri hakkında sor..."
+              data-placeholder-en="Ask about Mert's experience..."
+            />
+            <button type="submit" aria-label="Soruyu gönder">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m5 12 14-8-4.5 16-3-6.5L5 12Z"></path>
+                <path d="m11.5 13.5 7.5-9.5"></path>
+              </svg>
+            </button>
+          </form>
+          <div class="chat-disclaimer">
+            <span data-tr="Yanıtlar yalnızca Mert'in onayladığı kaynaklara dayanır." data-en="Answers only use sources approved by Mert.">
+              Yanıtlar yalnızca Mert'in onayladığı kaynaklara dayanır.
+            </span>
+          </div>
+        </section>
+
+        <img class="single-signature" src="./public/assets/signature.png" alt="Mert Sürücü imzası" />
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
