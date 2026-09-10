@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'none'; child-src 'none'; connect-src 'self'; font-src 'self'; form-action 'none'; frame-src 'none'; img-src 'self' data:; manifest-src 'self'; media-src 'none'; object-src 'none'; script-src 'self'; style-src 'self'; worker-src 'none'; upgrade-insecure-requests"
+    />
     <meta
       name="description"
       content="Kağan Mert Sürücü'nün yapay zekâ, mobil geliştirme, akademik çalışmaları ve projeleri hakkında bilgi edinin."
@@ -18,16 +23,11 @@
     <meta property="og:url" content="https://mertsurucu.com/" />
     <meta property="og:image" content="https://mertsurucu.com/public/assets/banner-hero.jpg" />
     <title>Mert Sürücü — Kişisel AI</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="./public/assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- The loader stays on screen until app.js fetches the JSON QA file. -->
+    <!-- The loader stays on screen until the structured knowledge base is ready. -->
     <div class="site-loader" id="siteLoader" role="status" aria-live="polite">
       <div class="loader-mark" aria-hidden="true">
         <img src="./public/assets/assistant-robot-wave.gif" alt="" />
@@ -45,7 +45,13 @@
       <div class="hero-image" aria-hidden="true"></div>
       <div class="hero-shade" aria-hidden="true"></div>
 
-      <button class="lang-toggle" type="button" aria-label="Dili değiştir">
+      <button
+        class="lang-toggle"
+        type="button"
+        aria-label="Dili İngilizce yap"
+        data-label-tr="Dili İngilizce yap"
+        data-label-en="Switch language to Turkish"
+      >
         <span class="active">TR</span><span>EN</span>
       </button>
 
@@ -74,13 +80,17 @@
             </button>
           </div>
 
-          <form class="chat-form" id="chatForm">
-            <label class="sr-only" for="chatInput">Sorunuzu yazın</label>
+          <form class="chat-form" id="chatForm" novalidate>
+            <label class="sr-only" for="chatInput" data-tr="Sorunuzu yazın" data-en="Write your question">Sorunuzu yazın</label>
             <input
               id="chatInput"
               name="question"
               type="text"
               autocomplete="off"
+              enterkeyhint="send"
+              maxlength="280"
+              spellcheck="true"
+              aria-describedby="chatDisclaimer"
               placeholder="Mert’in deneyimleri hakkında sor..."
               data-placeholder-tr="Mert’in deneyimleri hakkında sor..."
               data-placeholder-en="Ask about Mert's experience..."
@@ -92,7 +102,7 @@
               </svg>
             </button>
           </form>
-          <div class="chat-disclaimer">
+          <div class="chat-disclaimer" id="chatDisclaimer">
             <span data-tr="Yanıtlar yalnızca Mert'in onayladığı kaynaklara dayanır." data-en="Answers only use sources approved by Mert.">
               Yanıtlar yalnızca Mert'in onayladığı kaynaklara dayanır.
             </span>
@@ -103,6 +113,6 @@
       </div>
     </main>
 
-    <script src="./app.js"></script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>

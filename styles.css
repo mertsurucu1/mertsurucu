@@ -7,8 +7,8 @@
   --paper: #f3f1e9;
   --acid: #b9ff5d;
   --muted: #9da9a3;
-  --sans: "Manrope", system-ui, sans-serif;
-  --mono: "DM Mono", monospace;
+  --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 * {
@@ -17,12 +17,28 @@
 
 html,
 body {
+  width: 100%;
   height: 100%;
+  max-width: 100%;
   overflow: hidden;
+  background: var(--ink);
+  scrollbar-width: none;
+}
+
+html {
+  overscroll-behavior: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--paper);
   background: var(--ink);
   font-family: var(--sans);
@@ -32,6 +48,13 @@ body {
 button,
 input {
   font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--acid);
+  outline-offset: 3px;
 }
 
 a {
@@ -63,7 +86,7 @@ a {
 
 /* ==========================================================================
    Opening loader
-   The loader stays visible while data/qa.json is being fetched.
+   The loader stays visible while the structured knowledge base is fetched.
    ========================================================================== */
 
 .site-loader {
@@ -181,6 +204,8 @@ a {
 .single-screen {
   position: relative;
   width: 100%;
+  max-width: 100%;
+  height: 100vh;
   height: 100dvh;
   min-height: 0;
   overflow: hidden;
@@ -314,7 +339,7 @@ a {
   height: 100%;
   min-height: 0;
   max-height: 650px;
-  margin-top: clamp(8px, 1.8vh, 18px);
+  margin-top: 0;
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -326,12 +351,34 @@ a {
   backdrop-filter: blur(22px);
 }
 
+.single-heading,
+.chat-shell,
+.chat-log,
+.prompt-chips,
+.chat-form,
+.chat-form input {
+  min-width: 0;
+}
+
 .chat-log {
   flex: 1;
   padding: 14px 20px 12px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+}
+
+.chat-log::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat-log::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-log::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .message {
@@ -370,6 +417,7 @@ a {
   background: rgba(255, 255, 255, 0.07);
   font-size: 12px;
   line-height: 1.65;
+  overflow-wrap: anywhere;
 }
 
 .message.user p {
@@ -488,6 +536,12 @@ a {
   background: var(--acid);
 }
 
+.chat-form button:disabled,
+.chat-form input:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
 .chat-form {
   position: relative;
   margin: 0 20px;
@@ -550,11 +604,30 @@ a {
    ========================================================================== */
 
 @media (max-width: 720px) {
+  .single-screen {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+  }
+
+  .single-screen::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
   .single-content {
     width: min(100% - 24px, 620px);
+    height: auto;
+    min-height: 100%;
     padding-top: 18px;
     padding-bottom: 10px;
     gap: 10px;
+    grid-template-rows: auto minmax(360px, 1fr) auto;
   }
 
   .single-heading h1 {
@@ -585,6 +658,11 @@ a {
     padding: 2px 13px 8px;
   }
 
+  .prompt-chips button {
+    min-height: 40px;
+    padding: 9px 12px;
+  }
+
   .chat-form {
     margin: 0 13px;
   }
@@ -608,13 +686,15 @@ a {
 
 @media (max-width: 520px) {
   .single-content {
-    width: 100%;
+    width: auto;
+    margin-left: max(2px, env(safe-area-inset-left));
+    margin-right: max(2px, env(safe-area-inset-right));
     padding: max(14px, env(safe-area-inset-top)) 0 max(6px, env(safe-area-inset-bottom));
     gap: 7px;
   }
 
   .single-heading {
-    padding: 0 48px 2px;
+    padding: 38px 16px 2px;
   }
 
   .single-heading h1 {
@@ -627,9 +707,9 @@ a {
   }
 
   .chat-shell {
-    border-right: 0;
-    border-left: 0;
-    border-radius: 18px;
+    border-color: rgba(185, 255, 93, 0.52);
+    border-radius: 16px;
+    min-height: 0;
   }
 
   .message {
@@ -637,8 +717,13 @@ a {
   }
 
   .message p {
+    border-color: rgba(255, 255, 255, 0.24);
     font-size: 13px;
     line-height: 1.58;
+  }
+
+  .chat-form input {
+    border-color: rgba(255, 255, 255, 0.38);
   }
 
   .prompt-chips {
@@ -652,6 +737,17 @@ a {
   .single-signature {
     height: 26px;
   }
+}
+
+@media (max-width: 360px) {
+  .single-content {
+    grid-template-rows: auto minmax(330px, 1fr) auto;
+  }
+
+  .single-heading {
+    padding-top: 36px;
+  }
+
 }
 
 @media (max-height: 700px) {
@@ -671,6 +767,23 @@ a {
 
   .single-signature {
     height: 30px;
+  }
+}
+
+@media (max-width: 720px) and (max-height: 520px) and (orientation: landscape) {
+  .single-content {
+    min-height: 100dvh;
+    padding-top: 10px;
+    grid-template-rows: auto minmax(300px, 1fr) auto;
+  }
+
+  .single-heading {
+    padding-top: 0;
+  }
+
+  .welcome-line,
+  .single-signature {
+    display: none;
   }
 }
 

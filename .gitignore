@@ -1,10 +1,24 @@
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 .env
 .env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
 
 *.log
+coverage/
+.cache/
+.parcel-cache/
+.eslintcache
+dist/
+build/
 *.gguf
 models/
 backend/index/

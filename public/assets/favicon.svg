@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Mert Sürücü — 35 / MS monogramı</title>
+  <path d="M10 0h44l10 10v44L54 64H10L0 54V10z" fill="#07130f"/>
+  <path d="M11 2h42l9 9v42l-9 9H11l-9-9V11z" fill="none" stroke="#b9ff5d" stroke-opacity=".3" stroke-width="2"/>
+  <g fill="#b9ff5d">
+    <!-- A quarter-turn M forms the angular 3. -->
+    <path transform="translate(32 17) rotate(90)" d="M0 24V0h6l9 9 9-9h6v24h-7V10l-8 8-8-8v14z"/>
+    <!-- The squared S shares the silhouette of a 5. -->
+    <path d="M36 17h20v7H43v5h7l6 6v6l-6 6H36v-7h13v-5H36z"/>
+  </g>
+  <!-- Dark green facets reveal the S without cutting the silhouette of the 5. -->
+  <path d="M36 17h6l-6 6zM36 29l6 6h-6z" fill="#416b28"/>
+</svg>

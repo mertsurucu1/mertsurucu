@@ -1,0 +1,2087 @@
+{
+  "schemaVersion": 2,
+  "locales": [
+    "tr",
+    "en"
+  ],
+  "ui": {
+    "tr": {
+      "greeting": "Merhaba, ben Mert’in kişisel asistanıyım. Sana hangi konuda yardımcı olabilirim?",
+      "unknown": "Bu konuda doğrulanmış bilgim yok. Mert’in eğitimi, deneyimleri, teknik becerileri, projeleri veya iletişim bilgileri hakkında sorabilirsin.",
+      "loadError": "Bilgi bankası şu anda yüklenemedi. Lütfen sayfayı yenileyip tekrar dene.",
+      "typing": "Yanıt hazırlanıyor",
+      "you": "SEN",
+      "linkEmail": "E-posta gönder",
+      "linkLinkedIn": "LinkedIn profilini aç",
+      "linkGitHub": "GitHub profilini aç",
+      "linkChess": "Satranç kaydını aç",
+      "linkGeneric": "Bağlantıyı aç"
+    },
+    "en": {
+      "greeting": "Hello, I’m Mert’s personal assistant. How can I help you?",
+      "unknown": "I don’t have verified information about that. You can ask about Mert’s education, experience, technical skills, projects or contact details.",
+      "loadError": "The knowledge base could not be loaded. Please refresh the page and try again.",
+      "typing": "Preparing reply",
+      "you": "YOU",
+      "linkEmail": "Send email",
+      "linkLinkedIn": "Open LinkedIn",
+      "linkGitHub": "Open GitHub",
+      "linkChess": "Open chess record",
+      "linkGeneric": "Open link"
+    }
+  },
+  "smallTalk": [
+    {
+      "id": "greeting",
+      "patterns": ["merhaba", "selam", "hey", "hello", "hi", "good morning", "good evening"],
+      "answers": {
+        "tr": "Merhaba! Mert’in eğitimi, deneyimleri, teknik becerileri, tez çalışması veya ilgi alanları hakkında yardımcı olabilirim.",
+        "en": "Hello! I can help with Mert’s education, experience, technical skills, thesis or interests."
+      }
+    },
+    {
+      "id": "identity",
+      "patterns": ["sen kimsin", "kimsin sen", "who are you"],
+      "answers": {
+        "tr": "Ben Mert’in kişisel dijital asistanıyım. Yalnızca Mert tarafından doğrulanan bilgilerle cevap veririm.",
+        "en": "I’m Mert’s personal digital assistant. I answer only with information verified by Mert."
+      }
+    },
+    {
+      "id": "wellbeing",
+      "patterns": ["nasilsin", "how are you"],
+      "answers": {
+        "tr": "Teşekkür ederim, yardıma hazırım. Mert hakkında ne öğrenmek istersin?",
+        "en": "I’m ready to help, thank you. What would you like to know about Mert?"
+      }
+    },
+    {
+      "id": "thanks",
+      "patterns": ["tesekkur", "tesekkurler", "sag ol", "thanks", "thank you"],
+      "answers": {
+        "tr": "Rica ederim. Mert hakkında başka bir sorun olursa buradayım.",
+        "en": "You’re welcome. I’m here if you have another question about Mert."
+      }
+    }
+  ],
+  "topics": [
+    {
+      "id": "site_owner",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "profile",
+        "website"
+      ],
+      "keywords": {
+        "tr": [
+          "site sahibi",
+          "site kimin",
+          "kime ait",
+          "portfolyo sahibi"
+        ],
+        "en": [
+          "site owner",
+          "who owns",
+          "whose site",
+          "belongs to"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Bu site kime aittir?",
+          "Bu kişisel web sitesi kime aittir?",
+          "Bu site kimin?",
+          "Bu portfolyo kime ait?",
+          "Bu web sitesinin sahibi kim?",
+          "Şu anda kimin sitesindeyim?",
+          "Bu site kimin portfolyo sitesidir?",
+          "Bu sitede kim hakkında bilgi verilmektedir?"
+        ],
+        "en": [
+          "Who owns this website?",
+          "Whose portfolio is this?",
+          "Who is this site about?"
+        ]
+      },
+      "answers": {
+        "tr": "Bu kişisel web sitesi Kağan Mert Sürücü’ye aittir.",
+        "en": "This personal website belongs to Kağan Mert Sürücü."
+      },
+      "source": "Mert Sürücü · Onaylı kişisel bilgiler"
+    },
+    {
+      "id": "profile",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "profile"
+      ],
+      "keywords": {
+        "tr": [
+          "kimdir",
+          "kim",
+          "tanıt",
+          "özgeçmiş",
+          "biyografi",
+          "profil"
+        ],
+        "en": [
+          "who",
+          "introduce",
+          "about",
+          "biography",
+          "bio",
+          "profile"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Kağan Mert Sürücü kimdir?",
+          "Mert kimdir?",
+          "Kağan kimdir?",
+          "Kağan Mert kimdir?",
+          "Mert hakkında bilgi verir misin?",
+          "Mert’i kısaca tanıtır mısın?",
+          "Bu sitedeki kişi kimdir?",
+          "Mert ne iş yapmaktadır?"
+        ],
+        "en": [
+          "Who is Kağan Mert Sürücü?",
+          "Who is Mert?",
+          "Can you introduce Mert?",
+          "What does Mert do?"
+        ]
+      },
+      "answers": {
+        "tr": "Kağan Mert Sürücü; bilgisayar mühendisliği mezunu, endüstri mühendisliği yüksek lisans öğrencisi ve yazılım geliştirme, veri analizi, yapay zekâ ile akademik araştırmalar yapan bir araştırmacı ve yazılım geliştiricidir.",
+        "en": "Kağan Mert Sürücü is a Computer Engineering graduate and an Industrial Engineering master’s student. He works on software development, data analysis, artificial intelligence and academic research."
+      },
+      "source": "CV · Genel Profil"
+    },
+    {
+      "id": "birth",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "personal"
+      ],
+      "keywords": {
+        "tr": [
+          "doğum",
+          "doğdu",
+          "doğum tarihi",
+          "doğum günü",
+          "yaş",
+          "kaç yaşında"
+        ],
+        "en": [
+          "birth",
+          "born",
+          "birth date",
+          "birthday",
+          "age",
+          "how old"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in doğum tarihi nedir?",
+          "Mert ne zaman doğdu?",
+          "Mert’in doğum günü ne zaman?",
+          "Mert kaç doğumludur?",
+          "Kağan Mert Sürücü’nün doğum tarihi nedir?",
+          "Mert’in doğum yılı nedir?",
+          "Mert kaç yaşındadır?"
+        ],
+        "en": [
+          "When was Mert born?",
+          "What is Mert’s birth date?",
+          "How old is Mert?"
+        ]
+      },
+      "answers": {
+        "tr": "Kağan Mert Sürücü, 10 Ağustos 1999 doğumludur.",
+        "en": "Kağan Mert Sürücü was born on 10 August 1999."
+      },
+      "source": "CV · Personal Information"
+    },
+    {
+      "id": "website",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "contact",
+        "website"
+      ],
+      "keywords": {
+        "tr": [
+          "web sitesi",
+          "internet sitesi",
+          "kişisel site",
+          "portfolyo adresi",
+          "alan adı",
+          "mertsurucu.com"
+        ],
+        "en": [
+          "website",
+          "personal site",
+          "portfolio site",
+          "domain",
+          "mertsurucu.com"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in kişisel web sitesi nedir?",
+          "Mert’in web sitesi nedir?",
+          "Mert’in portfolyo adresi nedir?",
+          "Bu sitenin adresi nedir?",
+          "Mert’in internet sitesi var mı?",
+          "Mert’in sitesine nasıl ulaşabilirim?",
+          "Şu anda hangi web sitesindeyim?"
+        ],
+        "en": [
+          "What is Mert’s website?",
+          "Where is Mert’s portfolio?",
+          "What is his domain?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert’in kişisel web sitesi mertsurucu.com adresindedir ve şu an zaten bu sitedesiniz.",
+        "en": "Mert’s personal website is https://mertsurucu.com, which is the site you are currently visiting."
+      },
+      "source": "Website · Profile"
+    },
+    {
+      "id": "site_scope",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "help",
+        "website"
+      ],
+      "keywords": {
+        "tr": [
+          "site içeriği",
+          "hangi bilgiler",
+          "ne sorabilirim",
+          "neler var",
+          "kapsam"
+        ],
+        "en": [
+          "site content",
+          "information",
+          "what can I ask",
+          "scope",
+          "topics"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Bu sitede hangi bilgiler bulunmaktadır?",
+          "Bu sitede ne var?",
+          "Bu sitede hangi bilgiler bulunuyor?",
+          "Mert hakkında hangi bilgilere ulaşabilirim?",
+          "Bu portfolyoda neler var?",
+          "Site içeriği nedir?",
+          "Mert’in hangi özellikleri anlatılıyor?"
+        ],
+        "en": [
+          "What can I learn on this site?",
+          "What information does this assistant provide?",
+          "What can I ask about Mert?"
+        ]
+      },
+      "answers": {
+        "tr": "Bu site üzerinden benim aracılığımla Mert’in eğitimi, deneyimleri, teknik becerileri, akademik çalışmaları, projeleri ve iletişim bilgileri hakkında bilgi alabilirsiniz.",
+        "en": "This assistant can answer questions about Mert’s education, experience, technical skills, academic work, projects, interests and contact details."
+      },
+      "source": "Mert Sürücü · Onaylı kişisel bilgiler"
+    },
+    {
+      "id": "contact",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "contact"
+      ],
+      "keywords": {
+        "tr": [
+          "iletişim",
+          "ulaş",
+          "eriş",
+          "irtibat",
+          "bağlantı kur",
+          "iletişim kanalları"
+        ],
+        "en": [
+          "contact",
+          "reach",
+          "get in touch",
+          "connect",
+          "contact channels"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’e nasıl ulaşabilirim?",
+          "Mert ile nasıl iletişim kurabilirim?",
+          "Mert’in iletişim bilgileri nelerdir?",
+          "Mert’e nereden ulaşabilirim?",
+          "Mert ile bağlantı kurmak istiyorum.",
+          "Mert’in iletişim kanalları nelerdir?",
+          "Mert’e ulaşmanın yolları nelerdir?",
+          "Mert’in sosyal medya hesapları nelerdir?"
+        ],
+        "en": [
+          "How can I contact Mert?",
+          "How can I reach Mert?",
+          "Where can I connect with Mert?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert’e şu kanallardan ulaşılabilir:\n• E-posta: kamertsurucu@gmail.com\n• LinkedIn: linkedin.com/in/mertsurucu1\n• GitHub: github.com/mertsurucu1\n• Kişisel web sitesi: mertsurucu.com",
+        "en": "You can reach Mert via email at kamertsurucu@gmail.com, LinkedIn at https://linkedin.com/in/mertsurucu1, GitHub at https://github.com/mertsurucu1 or his website at https://mertsurucu.com."
+      },
+      "source": "CV · İletişim"
+    },
+    {
+      "id": "email",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "contact",
+        "email"
+      ],
+      "keywords": {
+        "tr": [
+          "e-posta",
+          "eposta",
+          "mail",
+          "mail adresi",
+          "email"
+        ],
+        "en": [
+          "email",
+          "email address",
+          "mail",
+          "send email"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in e-posta adresi nedir?",
+          "Mert’in mail adresi nedir?",
+          "Mert’e nasıl e-posta gönderebilirim?",
+          "Mert’e e-posta üzerinden nasıl ulaşabilirim?",
+          "Mert’in iletişim e-postası nedir?",
+          "Mert’e mail atmak istiyorum."
+        ],
+        "en": [
+          "What is Mert’s email address?",
+          "How can I email Mert?",
+          "Where can I send Mert an email?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert’in e-posta adresi kamertsurucu@gmail.com şeklindedir.",
+        "en": "Mert’s email address is kamertsurucu@gmail.com."
+      },
+      "source": "Mert Sürücü · Onaylı kişisel bilgiler"
+    },
+    {
+      "id": "linkedin",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "contact",
+        "social"
+      ],
+      "keywords": {
+        "tr": [
+          "linkedin",
+          "linkedin hesabı",
+          "profesyonel profil"
+        ],
+        "en": [
+          "linkedin",
+          "linkedin profile",
+          "professional profile"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in LinkedIn hesabı nedir?",
+          "Mert’in LinkedIn adresi nedir?",
+          "Mert’in LinkedIn profiline nasıl ulaşabilirim?",
+          "Mert LinkedIn kullanıyor mu?",
+          "LinkedIn üzerinden Mert’e nasıl ulaşabilirim?",
+          "Mert’in profesyonel profili nedir?"
+        ],
+        "en": [
+          "What is Mert’s LinkedIn profile?",
+          "How can I find Mert on LinkedIn?",
+          "Does Mert use LinkedIn?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert’in LinkedIn profili linkedin.com/in/mertsurucu1 adresindedir.",
+        "en": "Mert’s LinkedIn profile is https://linkedin.com/in/mertsurucu1."
+      },
+      "source": "Mert Sürücü · Onaylı kişisel bilgiler"
+    },
+    {
+      "id": "github_projects",
+      "category": "Genel profil ve iletişim",
+      "tags": [
+        "contact",
+        "projects",
+        "code"
+      ],
+      "keywords": {
+        "tr": [
+          "github",
+          "github hesabı",
+          "proje",
+          "projeler",
+          "repo",
+          "repolar",
+          "kod",
+          "kodlar",
+          "portfolyo"
+        ],
+        "en": [
+          "github",
+          "projects",
+          "repository",
+          "repositories",
+          "repos",
+          "source code",
+          "portfolio",
+          "built"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in GitHub hesabı nedir?",
+          "Mert’in GitHub kullanıcı adı nedir?",
+          "Mert’in GitHub profiline nasıl ulaşabilirim?",
+          "Mert GitHub kullanıyor mu?",
+          "Mert’in kodlarına nereden ulaşabilirim?",
+          "Mert’in GitHub adresi nedir?",
+          "Mert’in GitHub bağlantısı nedir?",
+          "Mert’in projelerini nereden inceleyebilirim?",
+          "Mert’in projelerini nerede görebilirim?",
+          "Mert ne tür projelerde çalışmıştır?",
+          "Mert ne tür projeler yaptı?",
+          "Mert’in güncel projeleri nelerdir?",
+          "Mert’in deneysel çalışmaları nerede?",
+          "Mert’in herkese açık projeleri var mı?",
+          "Mert’in GitHub projelerine nasıl ulaşabilirim?",
+          "Mert’in GitHub profili nedir?",
+          "Mert’in repolarını gösterir misin?",
+          "Mert’in projelerini göster."
+        ],
+        "en": [
+          "What is Mert’s GitHub profile?",
+          "Where can I see Mert’s projects?",
+          "Show me Mert’s repositories.",
+          "What has Mert built?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert’in güncel kodlarını, deneysel çalışmalarını ve herkese açık projelerini GitHub profilinden inceleyebilirsin. https://github.com/mertsurucu1",
+        "en": "You can explore Mert’s current code, experimental work and public projects on his GitHub profile: https://github.com/mertsurucu1"
+      },
+      "source": "GitHub · Projeler"
+    },
+    {
+      "id": "education_overview",
+      "category": "Eğitim",
+      "tags": [
+        "education"
+      ],
+      "keywords": {
+        "tr": [
+          "eğitim",
+          "eğitim geçmişi",
+          "okul",
+          "okul hayatı",
+          "öğrenim",
+          "mezun",
+          "mezuniyet",
+          "diploma",
+          "akademik geçmiş"
+        ],
+        "en": [
+          "education",
+          "educational background",
+          "school",
+          "school life",
+          "studies",
+          "graduate",
+          "graduated",
+          "degree",
+          "diploma",
+          "academic background"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in eğitim geçmişi nedir?",
+          "Mert hangi bölümleri okudu?",
+          "Mert’in akademik geçmişi nasıldır?",
+          "Mert şu anda ne okumaktadır?",
+          "Eğitim hayatını kısaca anlatır mısın?",
+          "Mert hangi alanlarda eğitim almıştır?",
+          "Mezun",
+          "Mezuniyeti",
+          "Okul hayatı",
+          "Mert’in okul hayatı nasıldır?",
+          "Mert nerelerde okudu?",
+          "Öğrenim hayatını anlatır mısın?"
+        ],
+        "en": [
+          "What is Mert’s educational background?",
+          "Tell me about Mert’s school life.",
+          "Where did Mert study?",
+          "What did Mert graduate from?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, 2013–2017 yılları arasında Konya Anadolu Lisesi’nde sayısal ağırlıklı eğitim aldı. 2018’de KTO Karatay Üniversitesi Bilgisayar Mühendisliği bölümüne başladı; bir yıl İngilizce hazırlık ve dört yıl bölüm eğitiminin ardından 2023’te 3.11/4.00 ortalamayla mezun oldu. 2024’te Necmettin Erbakan Üniversitesi Endüstri Mühendisliği yüksek lisansına başladı ve programı 2026’da tamamlaması planlanmaktadır.",
+        "en": "Mert attended Konya Anatolian High School from 2013 to 2017 in a science-focused program. He began Computer Engineering at KTO Karatay University in 2018 and graduated in 2023 with a 3.11/4.00 GPA after one English preparatory year and four undergraduate years. In 2024, he began a master’s in Industrial Engineering at Necmettin Erbakan University, planned for completion in 2026."
+      },
+      "source": "CV · Education"
+    },
+    {
+      "id": "high_school",
+      "category": "Eğitim",
+      "tags": [
+        "education",
+        "high-school"
+      ],
+      "keywords": {
+        "tr": [
+          "lise",
+          "anadolu lisesi",
+          "konya anadolu",
+          "ortaöğretim",
+          "sayısal"
+        ],
+        "en": [
+          "high school",
+          "secondary school",
+          "konya anatolian",
+          "science focused"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert hangi lisede okumuştur?",
+          "Mert’in lisesi nedir?",
+          "Mert lise eğitimini nerede aldı?",
+          "Mert hangi yıllarda lisede okudu?",
+          "Lisede hangi alanda eğitim aldı?",
+          "Mert sayısal öğrencisi miydi?"
+        ],
+        "en": [
+          "Which high school did Mert attend?",
+          "Where did Mert complete high school?",
+          "What did he study in high school?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, 2013–2017 yılları arasında Konya Anadolu Lisesi’nde sayısal ağırlıklı eğitim almıştır.",
+        "en": "Mert attended Konya Anatolian High School between 2013 and 2017 in a science-focused curriculum, developing foundational science knowledge and analytical thinking skills."
+      },
+      "source": "CV · Eğitim"
+    },
+    {
+      "id": "bachelor_school",
+      "category": "Eğitim",
+      "tags": [
+        "education",
+        "bachelor"
+      ],
+      "keywords": {
+        "tr": [
+          "lisans üniversitesi",
+          "mezun olduğu okul",
+          "hangi üniversite",
+          "karatay",
+          "kto karatay"
+        ],
+        "en": [
+          "bachelor university",
+          "undergraduate university",
+          "which university",
+          "alma mater",
+          "kto karatay"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert lisans eğitimini nerede almıştır?",
+          "Mert hangi üniversiteden mezun oldu?",
+          "Mert’in lisans üniversitesi nedir?",
+          "Bilgisayar mühendisliğini nerede okudu?",
+          "Mert üniversiteyi nerede okudu?",
+          "Mert’in mezun olduğu okul hangisidir?"
+        ],
+        "en": [
+          "Which university did Mert graduate from?",
+          "Where did Mert study Computer Engineering?",
+          "What is Mert’s undergraduate university?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, KTO Karatay Üniversitesi’nde lisans eğitimi almıştır.",
+        "en": "He completed his Computer Engineering bachelor’s at KTO Karatay University between 2018 and 2023 with a 3.11/4.00 GPA, focusing especially on mobile development alongside data structures, data mining and big data."
+      },
+      "source": "CV · Eğitim"
+    },
+    {
+      "id": "bachelor_degree",
+      "category": "Eğitim",
+      "tags": [
+        "education",
+        "bachelor"
+      ],
+      "keywords": {
+        "tr": [
+          "hangi bölüm",
+          "mezun olduğu bölüm",
+          "lisans bölümü",
+          "ne mezunu",
+          "bilgisayar mühendisliği"
+        ],
+        "en": [
+          "bachelor degree",
+          "major",
+          "department",
+          "field of study",
+          "computer engineering"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert hangi bölümden mezun olmuştur?",
+          "Mert’in lisans bölümü nedir?",
+          "Mert ne mezunudur?",
+          "Mert hangi mühendislik bölümünü okudu?",
+          "Bilgisayar mühendisliği mezunu mu?",
+          "Üniversitede hangi bölümde okudu?"
+        ],
+        "en": [
+          "What is Mert’s bachelor’s degree?",
+          "What was Mert’s major?",
+          "Which department did Mert graduate from?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, Bilgisayar Mühendisliği bölümünden mezun olmuştur.",
+        "en": "He completed his Computer Engineering bachelor’s at KTO Karatay University between 2018 and 2023 with a 3.11/4.00 GPA, focusing especially on mobile development alongside data structures, data mining and big data."
+      },
+      "source": "CV · Eğitim"
+    },
+    {
+      "id": "bachelor_details",
+      "category": "Eğitim",
+      "tags": [
+        "education",
+        "bachelor"
+      ],
+      "keywords": {
+        "tr": [
+          "gano",
+          "not ortalaması",
+          "üniversite ortalaması",
+          "lisans tarihleri",
+          "ne zaman mezun",
+          "hazırlık",
+          "3.11"
+        ],
+        "en": [
+          "gpa",
+          "grade point average",
+          "graduation year",
+          "bachelor dates",
+          "preparatory year",
+          "3.11"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in lisans tarihleri ve not ortalaması nedir?",
+          "Mert bilgisayar mühendisliğini hangi yıllarda okudu?",
+          "Mert üniversiteden ne zaman mezun oldu?",
+          "Mert’in lisans not ortalaması kaçtır?",
+          "Mert’in üniversite ortalaması nedir?",
+          "Mert’in GANO’su kaçtır?",
+          "Lisans eğitimi kaç yıl sürdü?",
+          "Mert İngilizce hazırlık okudu mu?",
+          "Üniversite eğitimi neden beş yıl sürdü?",
+          "Bilgisayar mühendisliği eğitimi kaç yıl sürdü?"
+        ],
+        "en": [
+          "When did Mert graduate?",
+          "What was Mert’s GPA?",
+          "How long was his bachelor’s degree?",
+          "Did Mert attend an English preparatory year?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, bir yıl İngilizce hazırlık ve dört yıl bölüm eğitimi olmak üzere 2018–2023 yılları arasında beş yıllık Bilgisayar Mühendisliği eğitimi almış ve 3.11/4.00 not ortalamasıyla mezun olmuştur.",
+        "en": "He completed his Computer Engineering bachelor’s at KTO Karatay University between 2018 and 2023 with a 3.11/4.00 GPA, focusing especially on mobile development alongside data structures, data mining and big data."
+      },
+      "source": "CV · Eğitim"
+    },
+    {
+      "id": "bachelor_focus",
+      "category": "Eğitim",
+      "tags": [
+        "education",
+        "bachelor",
+        "skills"
+      ],
+      "keywords": {
+        "tr": [
+          "lisans dönemi",
+          "üniversite dersleri",
+          "veri yapıları",
+          "veri madenciliği",
+          "büyük veri",
+          "mobil yönelim"
+        ],
+        "en": [
+          "bachelor focus",
+          "university courses",
+          "data structures",
+          "data mining",
+          "big data",
+          "mobile focus"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert lisans döneminde hangi alanlarda çalışmıştır?",
+          "Mert üniversitede hangi dersleri aldı?",
+          "Veri Yapıları dersi aldı mı?",
+          "Veri Madenciliği dersi aldı mı?",
+          "Büyük Veri dersi aldı mı?",
+          "Lisans döneminde hangi alana yöneldi?",
+          "Üniversitede mobil uygulama geliştirdi mi?",
+          "Lisans döneminde neler yaptı?",
+          "Mert üniversitede hangi alanda kendini geliştirdi?"
+        ],
+        "en": [
+          "What did Mert focus on during his bachelor’s?",
+          "Which courses did Mert take at university?",
+          "Did Mert develop mobile applications at university?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert; Veri Yapıları, Veri Madenciliği ve Büyük Veri dersleriyle çalışmış ve mobil uygulama geliştirmeye yönelmiştir.",
+        "en": "For mobile development, he has worked with Swift, SwiftUI, UIKit, Kotlin, Java, Flutter and React Native. He focused on mobile during his bachelor’s and validated his graduation project with a mobile test app."
+      },
+      "source": "CV · Yetenekler"
+    },
+    {
+      "id": "masters_school",
+      "category": "Eğitim",
+      "tags": [
+        "education",
+        "masters"
+      ],
+      "keywords": {
+        "tr": [
+          "yüksek lisans üniversitesi",
+          "necmettin erbakan",
+          "yüksek lisans nerede"
+        ],
+        "en": [
+          "master university",
+          "graduate university",
+          "necmettin erbakan",
+          "where master"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert yüksek lisansını nerede yapmaktadır?",
+          "Mert hangi üniversitede yüksek lisans yapıyor?",
+          "Mert’in yüksek lisans üniversitesi nedir?",
+          "Yüksek lisans eğitimine nerede devam ediyor?",
+          "Mert şu anda hangi üniversitede okuyor?",
+          "Mert yüksek lisans öğrencisi mi?"
+        ],
+        "en": [
+          "Where is Mert doing his master’s?",
+          "Which university does Mert attend for graduate school?",
+          "Is Mert a master’s student?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, yüksek lisansını Necmettin Erbakan Üniversitesi’nde yapmaktadır.",
+        "en": "Mert started his master’s in Industrial Engineering at Necmettin Erbakan University in 2024 and aims to complete it in 2026. His work includes data analysis, visualization, academic reporting with Python and project management."
+      },
+      "source": "CV · Eğitim"
+    },
+    {
+      "id": "masters_details",
+      "category": "Eğitim",
+      "tags": [
+        "education",
+        "masters"
+      ],
+      "keywords": {
+        "tr": [
+          "yüksek lisans",
+          "yüksek lisans bölümü",
+          "endüstri mühendisliği",
+          "yüksek lisans tarihi",
+          "2024",
+          "2026"
+        ],
+        "en": [
+          "master",
+          "master degree",
+          "industrial engineering",
+          "postgraduate",
+          "master dates",
+          "2024",
+          "2026"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in yüksek lisans bölümü ve tarihleri nedir?",
+          "Mert hangi alanda yüksek lisans yapıyor?",
+          "Mert’in yüksek lisans bölümü nedir?",
+          "Yüksek lisansa ne zaman başladı?",
+          "Yüksek lisansı ne zaman bitecek?",
+          "Planlanan yüksek lisans mezuniyet yılı nedir?",
+          "Mert’in yüksek lisans programı nedir?",
+          "Endüstri mühendisliği yüksek lisansına ne zaman başladı?"
+        ],
+        "en": [
+          "What is Mert’s master’s field?",
+          "When did Mert start his master’s?",
+          "When is his master’s planned to finish?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, Endüstri Mühendisliği yüksek lisansına 2024 yılında başlamıştır ve eğitimini 2026 yılında tamamlaması planlanmaktadır.",
+        "en": "Mert started his master’s in Industrial Engineering at Necmettin Erbakan University in 2024 and aims to complete it in 2026. His work includes data analysis, visualization, academic reporting with Python and project management."
+      },
+      "source": "CV · Eğitim"
+    },
+    {
+      "id": "masters_focus",
+      "category": "Eğitim",
+      "tags": [
+        "education",
+        "masters",
+        "skills"
+      ],
+      "keywords": {
+        "tr": [
+          "yüksek lisans çalışmaları",
+          "yüksek lisansta",
+          "akademik raporlama",
+          "veri görselleştirme"
+        ],
+        "en": [
+          "master work",
+          "graduate studies",
+          "academic reporting",
+          "data visualization"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert yüksek lisans döneminde hangi alanlarda çalışmıştır?",
+          "Mert yüksek lisansta ne yaptı?",
+          "Yüksek lisansta hangi alanlarda deneyim kazandı?",
+          "Yüksek lisansta hangi derslerde aktifti?",
+          "Yüksek lisans çalışmalarında neler yaptı?",
+          "Yüksek lisansta Python kullandı mı?",
+          "Yüksek lisansta veri analizi yaptı mı?",
+          "Akademik raporlama yaptı mı?",
+          "Veri görselleştirme üzerine çalıştı mı?"
+        ],
+        "en": [
+          "What did Mert work on during his master’s?",
+          "What skills did Mert gain in graduate school?",
+          "Did Mert use Python during his master’s?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert; veri analizi, veri görselleştirme, akademik raporlama, yapay zekâ ve proje yönetimi alanlarında çalışmıştır.",
+        "en": "During his master’s, Mert worked on data analysis, data visualization, academic reporting, artificial intelligence and project management."
+      },
+      "source": "Mert Sürücü · Onaylı kişisel bilgiler"
+    },
+    {
+      "id": "project_management",
+      "category": "Eğitim",
+      "tags": [
+        "experience",
+        "management"
+      ],
+      "keywords": {
+        "tr": [
+          "proje yönetimi",
+          "proje planlama",
+          "görev dağılımı",
+          "ekip çalışması",
+          "proje takibi"
+        ],
+        "en": [
+          "project management",
+          "project planning",
+          "task allocation",
+          "teamwork",
+          "project tracking"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in proje yönetimi deneyimi var mıdır?",
+          "Mert proje yönetimi dersi aldı mı?",
+          "Bir yazılım projesinde görev aldı mı?",
+          "Proje planlama deneyimi var mı?",
+          "Proje yönetimi dersinde ne yaptı?",
+          "Ekip içerisinde proje yürüttü mü?",
+          "Görev dağılımı yaptı mı?",
+          "Yazılım projesi takip etti mi?",
+          "Mert’in ekip çalışması deneyimi var mı?"
+        ],
+        "en": [
+          "Does Mert have project management experience?",
+          "Has Mert planned and tracked a software project?",
+          "Does Mert have teamwork experience?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, bir yazılım projesinin planlama, görev dağılımı, uygulama ve takip süreçlerinde ekip içerisinde görev almıştır.",
+        "en": "Mert has worked in a software project team across planning, task allocation, implementation and progress tracking."
+      },
+      "source": "Mert Sürücü · Onaylı kişisel bilgiler"
+    },
+    {
+      "id": "thesis",
+      "category": "Tez ve akademik araştırmalar",
+      "tags": [
+        "research",
+        "ai",
+        "nlp",
+        "rag-ready"
+      ],
+      "keywords": {
+        "tr": [
+          "tez",
+          "tez konusu",
+          "fonbulucu",
+          "lora",
+          "qwen",
+          "kumru",
+          "distillation",
+          "fine tuning",
+          "rouge",
+          "bleu",
+          "meteor",
+          "nlp",
+          "dil modeli"
+        ],
+        "en": [
+          "thesis",
+          "dissertation",
+          "fonbulucu",
+          "lora",
+          "qwen",
+          "kumru",
+          "distillation",
+          "fine tuning",
+          "rouge",
+          "bleu",
+          "meteor",
+          "nlp",
+          "language model"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in tez çalışması nedir?",
+          "Mert’in yüksek lisans tezinin konusu nedir?",
+          "Mert tezinde ne çalışıyor?",
+          "Mert’in tezi ne hakkında?",
+          "Tezde hangi veriler kullanılıyor?",
+          "Tez verileri nereden alındı?",
+          "Tezde nasıl bir veri kümesi oluşturuldu?",
+          "Data distillation kullanıldı mı?",
+          "GPT-4 tezde ne için kullanıldı?",
+          "Tezde hangi modeller kullanıldı?",
+          "Qwen3-0.6B kullanıldı mı?",
+          "Kumru-2B kullanıldı mı?",
+          "Modeller nasıl fine-tune edildi?",
+          "LoRA kullanıldı mı?",
+          "Tezde hangi değerlendirme metrikleri kullanıldı?",
+          "Modeller nasıl karşılaştırıldı?",
+          "Mert’in NLP deneyimi var mı?",
+          "Mert küçük dil modelleriyle çalıştı mı?"
+        ],
+        "en": [
+          "What is Mert’s thesis about?",
+          "Which models did Mert fine-tune?",
+          "Which evaluation metrics did Mert use?",
+          "Did Mert work with Turkish language models?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, Fonbulucu’daki halka açık Türkçe girişimcilik verilerinden görev tabanlı bir veri kümesi oluşturmuştur. Veri kümesini GPT-4 destekli data distillation ile genişletmiş, Qwen3-0.6B ve Kumru-2B modellerine LoRA fine-tuning uygulamış ve modelleri ROUGE, BLEU, METEOR ile LLM-as-a-Judge yöntemleriyle değerlendirmiştir.",
+        "en": "Mert’s master’s thesis uses public entrepreneurship data from Fonbulucu to create a task-based Turkish dataset. He expanded it with GPT-4-assisted data distillation, fine-tuned Qwen3-0.6B and Kumru-2B with LoRA, and compared them using ROUGE, BLEU, METEOR and LLM-as-a-Judge."
+      },
+      "source": "CV · Yüksek Lisans Tezi"
+    },
+    {
+      "id": "research_period",
+      "category": "Tez ve akademik araştırmalar",
+      "tags": [
+        "research",
+        "experience"
+      ],
+      "keywords": {
+        "tr": [
+          "araştırma tarihi",
+          "bilimsel araştırma",
+          "bap bursiyeri",
+          "eylül 2024",
+          "aralık 2025"
+        ],
+        "en": [
+          "research period",
+          "scientific research",
+          "bap scholar",
+          "september 2024",
+          "december 2025"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert bilimsel araştırma projesinde nerede ve ne zaman çalışmıştır?",
+          "Mert bilimsel araştırma projesinde çalıştı mı?",
+          "Mert nerede araştırma yaptı?",
+          "BAP bursiyeri olarak çalıştı mı?",
+          "Araştırma projesi hangi tarihler arasındaydı?",
+          "Mert akademik projede görev aldı mı?",
+          "Mert bursiyer olarak nerede çalıştı?"
+        ],
+        "en": [
+          "Where and when did Mert work on a scientific research project?",
+          "Was Mert a BAP scholar?",
+          "When did Mert work at Necmettin Erbakan University?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, Eylül 2024 ile Aralık 2025 arasında Necmettin Erbakan Üniversitesi’nde Bilimsel Araştırma Projesi bursiyeri olarak görev almıştır.",
+        "en": "From September 2024 to December 2025, he was a scholar in a scientific research project at Necmettin Erbakan University combining AI and entrepreneurship tools, contributing to research, data preparation and software."
+      },
+      "source": "CV · Deneyim"
+    },
+    {
+      "id": "research_tasks",
+      "category": "İş ve proje deneyimleri",
+      "tags": [
+        "research",
+        "experience",
+        "ai"
+      ],
+      "keywords": {
+        "tr": [
+          "araştırma görevi",
+          "bap",
+          "bursiyer",
+          "veri hazırlama",
+          "girişimcilik",
+          "araştırma projesi",
+          "yazılım katkısı"
+        ],
+        "en": [
+          "research role",
+          "scholar",
+          "data preparation",
+          "entrepreneurship",
+          "research project",
+          "software contribution"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert bilimsel araştırma projesinde ne yapmıştır?",
+          "Mert BAP bursiyeri olarak çalıştı mı?",
+          "Bilimsel araştırma deneyimi var mı?",
+          "Üniversitede hangi tarihler arasında çalıştı?",
+          "Araştırma projesindeki görevi neydi?",
+          "Projede hangi süreçlere katkı sağladı?",
+          "Yapay zekâ ve girişimcilik üzerine çalıştı mı?",
+          "Mert bursiyer olarak hangi görevleri yaptı?",
+          "Mert araştırma projesinde ne yapmıştır?",
+          "Mert araştırma projesinde hangi görevleri yaptı?",
+          "Veri hazırlama yaptı mı?",
+          "Yazılım geliştirme yaptı mı?",
+          "Araştırma çalışmalarına katıldı mı?",
+          "Araştırma projesinin amacı neydi?",
+          "BAP projesinde ne yaptı?"
+        ],
+        "en": [
+          "What did Mert do in the research project?",
+          "What were Mert’s research responsibilities?",
+          "Did Mert contribute to data preparation and software?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, Eylül 2024 ile Aralık 2025 arasında Necmettin Erbakan Üniversitesi’nde Bilimsel Araştırma Projesi bursiyeri olarak görev almıştır. Yapay zekâ ile girişimcilik araçlarını bir araya getiren projede araştırma, veri hazırlama ve yazılım geliştirme süreçlerine katkı sağlamıştır.",
+        "en": "From September 2024 to December 2025, he was a scholar in a scientific research project at Necmettin Erbakan University combining AI and entrepreneurship tools, contributing to research, data preparation and software."
+      },
+      "source": "CV · Deneyim"
+    },
+    {
+      "id": "work_experience",
+      "category": "İş ve proje deneyimleri",
+      "tags": [
+        "experience",
+        "career"
+      ],
+      "keywords": {
+        "tr": [
+          "iş",
+          "meslek",
+          "iş deneyimi",
+          "deneyim",
+          "tecrübe",
+          "çalışma geçmişi",
+          "kariyer",
+          "profesyonel geçmiş"
+        ],
+        "en": [
+          "work",
+          "work experience",
+          "experience",
+          "career",
+          "work history",
+          "professional background",
+          "employment history"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in iş deneyimleri nelerdir?",
+          "Mert daha önce nerelerde çalıştı?",
+          "Mert’in çalışma geçmişi nedir?",
+          "Mert’in profesyonel deneyimleri nelerdir?",
+          "Mert staj yaptı mı?",
+          "Mert bursiyer olarak çalıştı mı?",
+          "Mert’in iş tecrübesini özetler misin?",
+          "Mert hangi kurumlarda çalıştı?",
+          "Mert daha önce hangi görevlerde bulundu?"
+        ],
+        "en": [
+          "What work experience does Mert have?",
+          "Where has Mert worked?",
+          "Summarize Mert’s professional background."
+        ]
+      },
+      "answers": {
+        "tr": "Mert, Mayıs 2021’de Tuyan Tasarım ve Reklam Ajansı’nda üç aylık stajına başlamış, stajının ardından aynı kurumda üç ay daha web arayüzü geliştirme çalışmalarını sürdürmüştür. Eylül 2024 ile Aralık 2025 arasında ise Necmettin Erbakan Üniversitesi’nde Bilimsel Araştırma Projesi bursiyeri olarak çalışmıştır.",
+        "en": "Mert worked at Tuyan Design and Advertising Agency for six months in 2021, first as an intern and then continuing in web interface development. From September 2024 to December 2025, he worked as a scholar on a Scientific Research Project at Necmettin Erbakan University, contributing to research, data preparation and software development."
+      },
+      "source": "CV · Experience"
+    },
+    {
+      "id": "graduation_project",
+      "category": "İş ve proje deneyimleri",
+      "tags": [
+        "projects",
+        "mobile",
+        "security"
+      ],
+      "keywords": {
+        "tr": [
+          "bitirme projesi",
+          "mezuniyet projesi",
+          "kimlik doğrulama",
+          "whatsapp",
+          "telegram",
+          "mobil test",
+          "prototip"
+        ],
+        "en": [
+          "graduation project",
+          "capstone",
+          "final year project",
+          "authentication",
+          "identity verification",
+          "whatsapp",
+          "telegram",
+          "prototype"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in lisans bitirme projesi nedir?",
+          "Mert bitirme projesinde ne yaptı?",
+          "Mezuniyet projesinde ne geliştirdi?",
+          "Mert’in üniversite projesi neydi?",
+          "Kimlik doğrulama üzerine bir proje yaptı mı?",
+          "WhatsApp veya Telegram kullanan bir sistem geliştirdi mi?",
+          "Bitirme projesi nasıl çalışıyordu?",
+          "Mesajlaşma uygulamaları projede nasıl kullanıldı?",
+          "Bitirme projesi ekip çalışması mıydı?",
+          "Proje nasıl test edildi?",
+          "Çalışan bir prototip hazırlandı mı?"
+        ],
+        "en": [
+          "What was Mert’s graduation project?",
+          "How did Mert’s authentication project work?",
+          "Did the project use WhatsApp or Telegram?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, ekip çalışmasıyla WhatsApp ve Telegram gibi mesajlaşma uygulamalarını doğrulama kanalı olarak kullanan bir kimlik doğrulama sistemi geliştirmiştir. Sistem, kullanıcıların doğrulama işlemini mesajlaşma uygulaması üzerinden tamamlayarak uygulamaya giriş yapmasını sağlamaktadır. Proje, mobil test uygulamasıyla doğrulanmış ve çalışan bir prototip olarak sunulmuştur.",
+        "en": "For his graduation project, he and his team built an identity verification system working through messaging applications. They validated it with a mobile test app and presented a functional prototype."
+      },
+      "source": "CV · Bitirme Projesi"
+    },
+    {
+      "id": "internship",
+      "category": "İş ve proje deneyimleri",
+      "tags": [
+        "experience",
+        "web",
+        "design"
+      ],
+      "keywords": {
+        "tr": [
+          "staj",
+          "stajyer",
+          "tuyan",
+          "ajans",
+          "reklam ajansı",
+          "web arayüzü",
+          "mayıs 2021",
+          "ekim 2021"
+        ],
+        "en": [
+          "internship",
+          "intern",
+          "trainee",
+          "tuyan",
+          "agency",
+          "web interface",
+          "may 2021",
+          "october 2021"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert, Tuyan Tasarım ve Reklam Ajansı’nda ne yapmıştır?",
+          "Mert Tuyan’da ne kadar süre çalıştı?",
+          "Mert nerede staj yaptı?",
+          "Tuyan’da hangi tarihler arasında çalıştı?",
+          "Stajdan sonra çalışmaya devam etti mi?",
+          "Reklam ajansında ne iş yaptı?",
+          "Tuyan’da hangi teknolojileri kullandı?",
+          "Ajansta nasıl bir ekiple çalıştı?",
+          "Tasarım çalışmalarına katıldı mı?",
+          "Mert yalnızca stajyer olarak mı görev yaptı?"
+        ],
+        "en": [
+          "Where did Mert intern?",
+          "What did Mert do at Tuyan?",
+          "How long did Mert work at the agency?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, Mayıs 2021 ile Ekim 2021 arasında Tuyan Tasarım ve Reklam Ajansı’nda toplam altı ay görev yapmıştır. İlk üç ayını stajyer olarak tamamlamış, stajının ardından aynı kurumda üç ay daha web arayüzü geliştirme çalışmalarını sürdürmüştür. HTML, CSS, JavaScript ve Bootstrap kullanarak farklı web projeleri için kullanıcı arayüzleri geliştirmiş; Adobe XD, Adobe Illustrator ve Figma ile tasarım çalışmalarına katılmıştır. Bu süreçte geliştiriciler, tasarımcılar ve yöneticilerle birlikte çalışmıştır.",
+        "en": "In 2021, he voluntarily extended his required internship at Tuyan Design and Advertising Agency to about six months. He built interfaces with HTML, CSS, JavaScript and Bootstrap and worked with developers, designers and managers."
+      },
+      "source": "CV · Deneyim"
+    },
+    {
+      "id": "technical_skills",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills"
+      ],
+      "keywords": {
+        "tr": [
+          "teknik beceri",
+          "teknoloji",
+          "teknoloji yığını",
+          "yetenek",
+          "yetkinlik",
+          "araçlar",
+          "yazılım becerileri"
+        ],
+        "en": [
+          "technical skills",
+          "technology",
+          "technologies",
+          "tech stack",
+          "skills",
+          "competencies",
+          "tools",
+          "software skills"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in teknik becerileri ve kullandığı teknolojiler nelerdir?",
+          "Mert hangi yazılım alanlarında çalışmıştır?",
+          "Mert ne tür yazılımlar geliştirmiştir?",
+          "Mert hangi teknolojileri biliyor?",
+          "Mert’in teknik yetenekleri nelerdir?",
+          "Mert’in teknoloji yığını nedir?",
+          "Mert hangi programlama dilleriyle çalışmıştır?",
+          "Mert web geliştirme biliyor mu?",
+          "Mert frontend tarafında hangi teknolojileri kullanmıştır?",
+          "Mert mobil uygulama geliştirmiş midir?",
+          "Mert Android uygulaması geliştirmiş midir?",
+          "Mert iOS uygulaması geliştirmiş midir?",
+          "Hangi mobil teknolojileri kullanıyor?",
+          "Mert’in mobil uygulama geliştirme deneyimi nedir?",
+          "Mert Android geliştirme biliyor mu?",
+          "Mert iOS geliştirme biliyor mu?",
+          "Mert hangi Android teknolojilerini kullanıyor?",
+          "Mert hangi iOS teknolojilerini kullanıyor?",
+          "Mert Flutter kullandı mı?",
+          "Mert React Native kullandı mı?",
+          "Mert Swift ve Kotlin biliyor mu?",
+          "Mert çapraz platform mobil uygulama geliştirdi mi?",
+          "Mert Flutter veya React Native kullanmış mıdır?",
+          "Mert hem Android hem iOS için uygulama geliştirmiş midir?",
+          "Mert Firebase kullanmış mıdır?",
+          "Mert hangi veritabanlarıyla çalışmıştır?",
+          "Mert REST API entegrasyonu yapmış mıdır?",
+          "Mert Python ile ne yapmıştır?",
+          "Mert veri analizi deneyimine sahip midir?",
+          "Mert makine öğrenmesi alanında çalışmış mıdır?",
+          "Mert’in yapay zekâ deneyimi var mıdır?",
+          "Mert MATLAB kullanmış mıdır?",
+          "Mert Unity ile oyun geliştirmiş midir?",
+          "Mert hangi tasarım araçlarını kullanmıştır?",
+          "Mert Microsoft Office araçlarını kullanıyor mu?"
+        ],
+        "en": [
+          "What are Mert’s technical skills?",
+          "Which technologies does Mert use?",
+          "What is Mert’s tech stack?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, yazılım geliştirme, veri analizi, yapay zekâ, tasarım ve oyun geliştirme alanlarında farklı teknolojilerle çalışmıştır:\n• Web geliştirme: HTML, CSS, JavaScript, Bootstrap, Tailwind CSS ve React kullanmıştır.\n• Android geliştirme: Java ve Kotlin ile Android uygulamaları üzerinde çalışmıştır.\n• iOS geliştirme: Swift, SwiftUI ve UIKit kullanmıştır.\n• Android ve iOS için ortak mobil geliştirme: Aynı kod tabanıyla her iki mobil işletim sistemi için uygulama geliştirmek amacıyla Flutter ve React Native kullanmıştır.\n• Uygulama hizmetleri ve veri yönetimi: Firebase Authentication, Cloud Firestore, Firebase Storage, REST API, MySQL, PostgreSQL ve Supabase ile çalışmıştır.\n• Python ve veri analizi: Python, Pandas, NumPy ve Matplotlib kullanarak veri analizi, veri işleme ve veri görselleştirme çalışmaları yapmıştır.\n• Makine öğrenmesi ve yapay zekâ: TensorFlow ve scikit-learn kullanmış; Türkçe veri kümesi hazırlama, GPT-4 destekli data distillation ve dil modeli fine-tuning çalışmaları gerçekleştirmiştir.\n• Dil modelleri: Qwen3-0.6B ve Kumru-2B modellerine LoRA fine-tuning uygulamıştır.\n• MATLAB: Sayısal hesaplama, çok ölçütlü karar analizi ve veri görselleştirme çalışmalarında kullanmıştır.\n• Oyun geliştirme: C# ve Unity kullanarak masaüstü oyunlar geliştirmektedir.\n• Programlama dilleri: Java, Kotlin, Swift, C++, Python, JavaScript ve C# ile çalışmıştır.\n• Tasarım araçları: Figma, Adobe XD, Adobe Illustrator ve Adobe Photoshop kullanmıştır.\n• Ofis araçları: Akademik rapor, veri düzenleme ve sunum çalışmalarında Excel, Word ve PowerPoint kullanmıştır.\nMert’in paylaştığı web, mobil ve diğer yazılım projeleri github.com/mertsurucu1 adresindeki GitHub profili üzerinden daha ayrıntılı incelenebilir.",
+        "en": "Mert works across web, mobile, data, AI, databases, interface design and game development. His toolkit includes JavaScript, React, Swift, SwiftUI, Kotlin, Flutter, React Native, Python, Pandas, TensorFlow, scikit-learn, Firebase, PostgreSQL, Supabase, C#, Unity, Figma and Adobe design tools."
+      },
+      "source": "CV · Skills"
+    },
+    {
+      "id": "mobile_development",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills",
+        "mobile"
+      ],
+      "keywords": {
+        "tr": [
+          "mobil",
+          "android",
+          "ios",
+          "swift",
+          "swiftui",
+          "uikit",
+          "kotlin",
+          "java",
+          "flutter",
+          "react native",
+          "çapraz platform"
+        ],
+        "en": [
+          "mobile",
+          "android",
+          "ios",
+          "swift",
+          "swiftui",
+          "uikit",
+          "kotlin",
+          "java",
+          "flutter",
+          "react native",
+          "cross platform"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in mobil geliştirme deneyimi nedir?",
+          "Mert hangi mobil teknolojileri kullanıyor?",
+          "Mert Android ve iOS geliştirme biliyor mu?"
+        ],
+        "en": [
+          "What is Mert’s mobile development experience?",
+          "Which mobile technologies does Mert use?",
+          "Can Mert develop for Android and iOS?"
+        ]
+      },
+      "answers": {
+        "tr": "Mobil tarafta Swift, SwiftUI, UIKit, Kotlin, Java, Flutter ve React Native ile çalıştı. Lisans döneminde mobil geliştirmeye yoğunlaştı; bitirme projesindeki kimlik doğrulama sistemini de bir mobil test uygulamasıyla doğruladı.",
+        "en": "For mobile development, he has worked with Swift, SwiftUI, UIKit, Kotlin, Java, Flutter and React Native. He focused on mobile during his bachelor’s and validated his graduation project with a mobile test app."
+      },
+      "source": "CV · Yetenekler"
+    },
+    {
+      "id": "web_development",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills",
+        "web"
+      ],
+      "keywords": {
+        "tr": [
+          "web",
+          "frontend",
+          "arayüz",
+          "html",
+          "css",
+          "javascript",
+          "react",
+          "bootstrap",
+          "tailwind"
+        ],
+        "en": [
+          "web",
+          "frontend",
+          "front end",
+          "interface",
+          "html",
+          "css",
+          "javascript",
+          "react",
+          "bootstrap",
+          "tailwind"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in web geliştirme deneyimi nedir?",
+          "Mert hangi frontend teknolojilerini kullanıyor?",
+          "Mert web arayüzü geliştirdi mi?"
+        ],
+        "en": [
+          "What is Mert’s web development experience?",
+          "Which frontend technologies does Mert use?",
+          "Has Mert built web interfaces?"
+        ]
+      },
+      "answers": {
+        "tr": "Web tarafında HTML, CSS, JavaScript, React, Bootstrap ve Tailwind ile çalışıyor. Ajans deneyiminde gerçek web arayüzleri geliştirirken Figma ve Adobe araçlarıyla tasarım sürecine de katkı verdi.",
+        "en": "On the web, he works with HTML, CSS, JavaScript, React, Bootstrap and Tailwind. During his agency experience, he built real web interfaces and also contributed to design using Figma and Adobe tools."
+      },
+      "source": "CV · Yetenekler & Deneyim"
+    },
+    {
+      "id": "data_ai",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills",
+        "data",
+        "ai"
+      ],
+      "keywords": {
+        "tr": [
+          "veri",
+          "veri analizi",
+          "python",
+          "pandas",
+          "numpy",
+          "matplotlib",
+          "tensorflow",
+          "scikit learn",
+          "makine öğrenmesi",
+          "yapay zekâ",
+          "görselleştirme",
+          "matlab"
+        ],
+        "en": [
+          "data",
+          "data analysis",
+          "python",
+          "pandas",
+          "numpy",
+          "matplotlib",
+          "tensorflow",
+          "scikit learn",
+          "machine learning",
+          "artificial intelligence",
+          "visualization",
+          "matlab"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in veri analizi ve yapay zekâ deneyimi nedir?",
+          "Mert Python ile ne yapıyor?",
+          "Mert makine öğrenmesi araçları kullanıyor mu?"
+        ],
+        "en": [
+          "What is Mert’s data and AI experience?",
+          "What does Mert do with Python?",
+          "Which machine learning tools does Mert use?"
+        ]
+      },
+      "answers": {
+        "tr": "Veri çalışmalarında Python, Pandas, NumPy, Matplotlib, TensorFlow ve scikit-learn kullanıyor. MATLAB ile sayısal hesaplama, çok ölçütlü karar analizi ve veri görselleştirme deneyimi de var.",
+        "en": "For data work, he uses Python, Pandas, NumPy, Matplotlib, TensorFlow and scikit-learn. He also has MATLAB experience in numerical computing, multi-criteria decision analysis and visualization."
+      },
+      "source": "CV · Yetenekler"
+    },
+    {
+      "id": "databases",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills",
+        "data",
+        "backend"
+      ],
+      "keywords": {
+        "tr": [
+          "veritabanı",
+          "firebase",
+          "firestore",
+          "authentication",
+          "storage",
+          "mysql",
+          "postgresql",
+          "supabase",
+          "rest api"
+        ],
+        "en": [
+          "database",
+          "firebase",
+          "firestore",
+          "authentication",
+          "storage",
+          "mysql",
+          "postgresql",
+          "supabase",
+          "rest api"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert hangi veritabanlarını kullanıyor?",
+          "Mert Firebase veya Supabase kullandı mı?",
+          "Mert REST API entegrasyonu yaptı mı?"
+        ],
+        "en": [
+          "Which databases does Mert use?",
+          "Has Mert used Firebase or Supabase?",
+          "Has Mert integrated REST APIs?"
+        ]
+      },
+      "answers": {
+        "tr": "Veri katmanında Firebase’in Firestore, Authentication ve Storage servisleriyle; ayrıca MySQL, PostgreSQL/Supabase ve REST API entegrasyonlarıyla çalıştı.",
+        "en": "For data layers, he has worked with Firebase Firestore, Authentication and Storage, as well as MySQL, PostgreSQL/Supabase and REST API integrations."
+      },
+      "source": "CV · Yetenekler"
+    },
+    {
+      "id": "design_tools",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills",
+        "design"
+      ],
+      "keywords": {
+        "tr": [
+          "tasarım",
+          "figma",
+          "adobe",
+          "illustrator",
+          "photoshop",
+          "xd",
+          "arayüz tasarımı",
+          "ui"
+        ],
+        "en": [
+          "design",
+          "figma",
+          "adobe",
+          "illustrator",
+          "photoshop",
+          "xd",
+          "interface design",
+          "ui"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert hangi tasarım araçlarını kullanıyor?",
+          "Mert’in arayüz tasarımı deneyimi var mı?",
+          "Mert Figma veya Adobe araçlarını kullandı mı?"
+        ],
+        "en": [
+          "Which design tools does Mert use?",
+          "Does Mert have interface design experience?",
+          "Has Mert used Figma or Adobe tools?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert’in tasarım deneyimi ajans stajında güçlendi. Arayüz ve görsel tasarım süreçlerinde Figma, Adobe XD, Illustrator ve Photoshop kullandı. Bu nedenle geliştirmeye yalnızca kod olarak değil, arayüz ve ürün deneyimi açısından da yaklaşıyor.",
+        "en": "Mert strengthened his design experience during his agency internship, using Figma, Adobe XD, Illustrator and Photoshop. This lets him approach development through interface and product experience, not only code."
+      },
+      "source": "CV · Deneyim & Yetenekler"
+    },
+    {
+      "id": "game_development",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills",
+        "game"
+      ],
+      "keywords": {
+        "tr": [
+          "oyun",
+          "oyun geliştirme",
+          "unity",
+          "csharp",
+          "masaüstü oyunu"
+        ],
+        "en": [
+          "game",
+          "game development",
+          "unity",
+          "csharp",
+          "desktop game"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert oyun geliştiriyor mu?",
+          "Mert Unity kullanıyor mu?",
+          "Mert C# ile ne yapıyor?"
+        ],
+        "en": [
+          "Does Mert develop games?",
+          "Does Mert use Unity?",
+          "What does Mert do with C#?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, C# ve Unity ile masaüstü oyunları tasarlıyor. 2025’te C# Programlama ve yüz yüze Unity ile Oyun Geliştirme eğitimlerini tamamladı.",
+        "en": "Mert designs desktop games with C# and Unity. In 2025, he completed courses in C# programming and an in-person Unity game development workshop."
+      },
+      "source": "CV · Kişisel Bilgiler"
+    },
+    {
+      "id": "programming_languages",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills",
+        "programming"
+      ],
+      "keywords": {
+        "tr": [
+          "programlama dilleri",
+          "java",
+          "cplusplus",
+          "c++",
+          "python",
+          "javascript",
+          "csharp",
+          "swift",
+          "kotlin",
+          "dart"
+        ],
+        "en": [
+          "programming languages",
+          "java",
+          "cplusplus",
+          "c++",
+          "python",
+          "javascript",
+          "csharp",
+          "swift",
+          "kotlin",
+          "dart"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert hangi programlama dillerini biliyor?",
+          "Mert hangi dillerle kod yazıyor?"
+        ],
+        "en": [
+          "Which programming languages does Mert use?",
+          "Which languages does Mert code in?"
+        ]
+      },
+      "answers": {
+        "tr": "CV’sinde Java, C++, Python, JavaScript, C#, Swift ve Kotlin yer alıyor. Ayrıca Dart tabanlı Flutter ve JavaScript tabanlı React Native ile mobil geliştirme deneyimi bulunuyor.",
+        "en": "His résumé lists Java, C++, Python, JavaScript, C#, Swift and Kotlin. He also has mobile experience with Dart-based Flutter and JavaScript-based React Native."
+      },
+      "source": "CV · Yetenekler"
+    },
+    {
+      "id": "office_tools",
+      "category": "Yazılım ve teknik beceriler",
+      "tags": [
+        "skills",
+        "office"
+      ],
+      "keywords": {
+        "tr": [
+          "office",
+          "ofis",
+          "excel",
+          "word",
+          "powerpoint",
+          "microsoft"
+        ],
+        "en": [
+          "office",
+          "excel",
+          "word",
+          "powerpoint",
+          "microsoft"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert hangi ofis araçlarını kullanıyor?",
+          "Mert Excel, Word veya PowerPoint kullanıyor mu?"
+        ],
+        "en": [
+          "Which office tools does Mert use?",
+          "Does Mert use Excel, Word or PowerPoint?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, akademik çalışmalarında Microsoft Excel, Word ve PowerPoint’i düzenli olarak kullanıyor.",
+        "en": "Mert regularly uses Microsoft Excel, Word and PowerPoint for academic work."
+      },
+      "source": "CV · Yetenekler"
+    },
+    {
+      "id": "english_level",
+      "category": "İngilizce ve eğitimler",
+      "tags": [
+        "language",
+        "education"
+      ],
+      "keywords": {
+        "tr": [
+          "ingilizce",
+          "yabancı dil",
+          "dil seviyesi",
+          "b1",
+          "hazırlık",
+          "çeviri",
+          "konuşma pratiği"
+        ],
+        "en": [
+          "english",
+          "foreign language",
+          "language level",
+          "b1",
+          "preparatory year",
+          "translation",
+          "speaking practice"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in İngilizce seviyesi ve İngilizce eğitim geçmişi nedir?",
+          "Mert İngilizce biliyor mu?",
+          "Mert’in İngilizce seviyesi nedir?",
+          "İngilizcesi hangi seviyededir?",
+          "Mert üniversitede İngilizce hazırlık okudu mu?",
+          "Mert İngilizce eğitim aldı mı?",
+          "Üniversitede derslerini İngilizce mi aldı?",
+          "İngilizcesini geliştirmek için ne yapıyor?",
+          "İngilizce konuşma pratiği yapıyor mu?",
+          "İngilizce metin çevirileri yapıyor mu?",
+          "Mert’in yabancı dil geçmişi nedir?"
+        ],
+        "en": [
+          "What is Mert’s English level?",
+          "Did Mert complete an English preparatory year?",
+          "How does Mert practice English?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, üniversitede bir yıllık İngilizce hazırlık eğitimini tamamlamış ve lisans eğitimi boyunca birçok dersi İngilizce olarak almıştır. İngilizce seviyesi B1’dir ve İngilizcesini metin çevirileri ile konuşma pratiği yaparak geliştirmeye devam etmektedir.",
+        "en": "According to his résumé, his English level is B1. He regularly practices text translation and speaking to improve it."
+      },
+      "source": "CV · Diller"
+    },
+    {
+      "id": "certificates",
+      "category": "İngilizce ve eğitimler",
+      "tags": [
+        "education",
+        "certificates"
+      ],
+      "keywords": {
+        "tr": [
+          "sertifika",
+          "sertifikalar",
+          "kurs",
+          "kurslar",
+          "eğitimler",
+          "atölye",
+          "git eğitimi",
+          "unity eğitimi",
+          "yapay zekâ etiği"
+        ],
+        "en": [
+          "certificate",
+          "certificates",
+          "certification",
+          "course",
+          "courses",
+          "training",
+          "workshop",
+          "git training",
+          "unity training",
+          "ai ethics"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in hangi eğitimleri ve sertifikaları vardır?",
+          "Mert hangi eğitimlere katılmıştır?",
+          "Mert’in sertifikaları nelerdir?",
+          "Mert hangi kursları tamamlamıştır?",
+          "Git ve GitHub eğitimi aldı mı?",
+          "C# programlama eğitimi aldı mı?",
+          "Unity eğitimi aldı mı?",
+          "Oyun geliştirme atölyesine katıldı mı?",
+          "Yapay zekâ etiği eğitimi aldı mı?",
+          "Eğitimlerin tarihleri nelerdir?"
+        ],
+        "en": [
+          "Which certificates does Mert have?",
+          "Which courses has Mert completed?",
+          "Has Mert attended AI ethics or Unity training?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert’in katıldığı eğitimler şunlardır:\n• Git ve GitHub — 4 Mayıs 2024\n• C# Programlama — 30 Ağustos 2025\n• Unity ile Oyun Geliştirme — 28 Eylül 2025\n• Yapay Zekâ ve Yapay Zekânın Etik Kullanımı 101 — 11 Şubat 2026",
+        "en": "Mert holds participation certificates in Web of Science (04 Mar 2024), Git and GitHub (04 May 2024), ProQuest (26 Nov 2024), entrepreneurship (26 Dec 2024), information technologies (04 May 2025), C# (30 Aug 2025), Unity game development (28 Sep 2025) and ethical AI use (11 Feb 2026)."
+      },
+      "source": "CV · Sertifikalar"
+    },
+    {
+      "id": "sports",
+      "category": "Spor ve kişisel ilgi alanları",
+      "tags": [
+        "personal",
+        "sports"
+      ],
+      "keywords": {
+        "tr": [
+          "spor",
+          "satranç",
+          "basketbol",
+          "hakem",
+          "ukd",
+          "voleybol",
+          "spor geçmişi"
+        ],
+        "en": [
+          "sport",
+          "sports",
+          "chess",
+          "basketball",
+          "referee",
+          "rating",
+          "volleyball",
+          "athletic background"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in spor geçmişi nedir?",
+          "Mert hangi sporlarla ilgilenmiştir?",
+          "Mert satranç oynuyor mu?",
+          "Mert’in profesyonel satranç geçmişi var mı?",
+          "Mert’in satranç maçlarını nereden görebilirim?",
+          "Mert’in UKD bilgilerine nasıl ulaşabilirim?",
+          "Mert’in satranç başarıları nereden incelenebilir?",
+          "Türkiye Satranç Federasyonunda kaydı var mı?",
+          "Mert basketbol oynamış mıdır?",
+          "Basketbolu hangi seviyede oynamıştır?",
+          "Mert basketbol takımında yer aldı mı?",
+          "Mert spor hakemliği yapıyor mu?",
+          "Mert satranç hakemi midir?",
+          "Mert voleybol hakemliği yapıyor mu?",
+          "Mert hâlâ sporun içinde mi?"
+        ],
+        "en": [
+          "What is Mert’s sports background?",
+          "Does Mert play chess?",
+          "Is Mert a chess or volleyball referee?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, basketbolu alt yaş kategorilerinde oynamış ve profesyonel satranç geçmişine sahip olmuştur. Geçmiş satranç maçları ve UKD bilgileri Türkiye Satranç Federasyonu’nun https://ukd.tsf.org.tr/ukdsorgulama.php adresindeki sorgulama sistemi üzerinden incelenebilir. Mert, günümüzde satranç ve voleybol hakemliği yaparak sporun içinde yer almaya devam etmektedir.",
+        "en": "He previously played chess and basketball professionally and currently continues his athletic career in chess. Outside technology, he also spends time practicing English translation and speaking."
+      },
+      "source": "CV · Kişisel Bilgiler"
+    },
+    {
+      "id": "interests",
+      "category": "Spor ve kişisel ilgi alanları",
+      "tags": [
+        "personal",
+        "interests"
+      ],
+      "keywords": {
+        "tr": [
+          "hobi",
+          "hobiler",
+          "ilgi",
+          "ilgi alanları",
+          "boş zaman",
+          "merakları"
+        ],
+        "en": [
+          "hobby",
+          "hobbies",
+          "interest",
+          "interests",
+          "free time",
+          "outside work"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in ilgi alanları nelerdir?",
+          "Mert’in hobileri nelerdir?",
+          "Mert boş zamanlarında ne yapıyor?",
+          "Mert nelerle ilgileniyor?",
+          "Yazılım dışında hangi alanlarla ilgileniyor?",
+          "Boş zamanlarını nasıl değerlendiriyor?",
+          "Mert’in kişisel uğraşları nelerdir?"
+        ],
+        "en": [
+          "What are Mert’s interests?",
+          "What are Mert’s hobbies?",
+          "What does Mert do outside work?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert; yapay zekâ, mobil uygulama geliştirme, oyun geliştirme, İngilizce, satranç ve spor hakemliğiyle ilgilenmektedir.",
+        "en": "He previously played chess and basketball professionally and currently continues his athletic career in chess. Outside technology, he also spends time practicing English translation and speaking."
+      },
+      "source": "Mert Sürücü · Onaylı kişisel bilgiler"
+    },
+    {
+      "id": "career_summary",
+      "category": "Genel deneyim",
+      "tags": [
+        "profile",
+        "education",
+        "experience"
+      ],
+      "keywords": {
+        "tr": [
+          "genel özet",
+          "kariyer özeti",
+          "eğitim ve deneyim",
+          "bugüne kadar",
+          "gelişimi"
+        ],
+        "en": [
+          "overall summary",
+          "career summary",
+          "education and experience",
+          "career journey",
+          "so far"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert’in eğitim ve deneyim geçmişini özetler misin?",
+          "Mert daha önce neler yapmıştır?",
+          "Mert’in iş ve proje geçmişi nedir?",
+          "Mert hangi projelerde görev almıştır?",
+          "Mert’in kariyerini özetler misin?",
+          "Mert’in geçmiş çalışmaları nelerdir?",
+          "Mert hakkında genel bir özet verir misin?",
+          "Mert’in akademik ve teknik deneyimleri nelerdir?",
+          "Mert’in eğitim ve çalışma hayatı nasıl ilerledi?",
+          "Mert lisansa ve yüksek lisansa ne zaman başladı?",
+          "Mert’in bugüne kadarki gelişimini anlatır mısın?"
+        ],
+        "en": [
+          "Can you summarize Mert’s education and experience?",
+          "Tell me about Mert’s career journey.",
+          "What has Mert done so far?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert, 2018 yılında KTO Karatay Üniversitesi Bilgisayar Mühendisliği bölümüne başlamış ve bir yıllık İngilizce hazırlığın ardından 2023 yılında 3.11/4.00 ortalamayla mezun olmuştur. Lisans döneminde mobil ve web geliştirme alanlarına yönelmiş, Tuyan Tasarım ve Reklam Ajansı’nda üç ay staj yaptıktan sonra aynı kurumda üç ay daha web arayüzü geliştirme çalışmalarını sürdürmüştür.\nBitirme projesinde WhatsApp ve Telegram üzerinden kimlik doğrulama sağlayan bir sistem geliştirmiştir. 2024 yılında Necmettin Erbakan Üniversitesi Endüstri Mühendisliği yüksek lisansına başlamış, bilimsel araştırma projesinde bursiyer olarak görev almış ve Türkçe girişimcilik verileriyle dil modelleri üzerine tez çalışması yürütmüştür.",
+        "en": "Mert began Computer Engineering at KTO Karatay University in 2018 and graduated in 2023 with a 3.11/4.00 GPA. He focused on mobile and web development, worked at Tuyan Design and Advertising Agency in 2021, and built a messaging-based identity verification system as his graduation project. In 2024, he began a master’s in Industrial Engineering at Necmettin Erbakan University, worked as a scientific research project scholar and conducted thesis research on Turkish language models using entrepreneurship data."
+      },
+      "source": "Mert Sürücü · Onaylı kişisel bilgiler"
+    },
+    {
+      "id": "current_work",
+      "category": "Güncel çalışma durumu",
+      "tags": [
+        "career",
+        "availability"
+      ],
+      "keywords": {
+        "tr": [
+          "şu anki iş",
+          "güncel iş",
+          "nerede çalışıyor",
+          "aktif çalışıyor",
+          "iş arıyor",
+          "iş teklifi",
+          "yeni fırsat"
+        ],
+        "en": [
+          "current job",
+          "current work",
+          "currently employed",
+          "open to work",
+          "available for work",
+          "job offer",
+          "new opportunities"
+        ]
+      },
+      "questions": {
+        "tr": [
+          "Mert aktif olarak nerede çalışmaktadır?",
+          "Mert şu anda nerede çalışıyor?",
+          "Mert aktif olarak çalışıyor mu?",
+          "Mert şu an bir şirkette çalışıyor mu?",
+          "Mert’in mevcut işi nedir?",
+          "Mert’in güncel çalışma durumu nedir?",
+          "Mert iş arıyor mu?",
+          "Mert iş tekliflerine açık mı?",
+          "Mert yeni fırsatları değerlendiriyor mu?",
+          "Mert ile çalışabilir miyiz?",
+          "Mert’e iş teklifi gönderebilir miyim?"
+        ],
+        "en": [
+          "Where does Mert currently work?",
+          "Is Mert currently employed?",
+          "Is Mert open to job offers?"
+        ]
+      },
+      "answers": {
+        "tr": "Mert şu anda aktif olarak bir kurumda çalışmamaktadır. Yazılım geliştirme, veri analizi, yapay zekâ ve ilgili alanlardaki uygun iş tekliflerine ve profesyonel çalışma fırsatlarına açıktır.",
+        "en": "Mert is not currently employed by an organization. He is open to suitable job offers and professional opportunities in software development, data analysis, artificial intelligence and related fields."
+      },
+      "source": "Güncel Çalışma Durumu"
+    }
+  ]
+}

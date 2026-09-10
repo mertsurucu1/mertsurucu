@@ -1,0 +1,10 @@
+{
+  "name": "mertsurucu-personal-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check js/app.js && node --check js/link-security.js && node --check js/retrieval.js && node --test",
+    "test": "node --test"
+  }
+}
