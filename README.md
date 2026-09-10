@@ -11,14 +11,16 @@
   </a>
 </p>
 
-<h2 align="center">Proje</h2>
-
 <p align="center">
   Ziyaretçilerin Mert’in eğitimi, deneyimleri, projeleri, teknik becerileri ve
   iletişim bilgileri hakkında doğrudan bilgi alabilmesi için geliştirilmiştir.
 </p>
 
-<h2 align="center">Aktif sitenin yapabildikleri</h2>
+<div align="center">
+  <samp>━━━━━━━━━━━━━━━━━━━━━━━━━━</samp>
+  <h3>Aktif sitenin yapabildikleri</h3>
+  <samp>━━━━━━━━━━━━━━━━━━━━━━━━━━</samp>
+</div>
 
 <p align="center">
   Türkçe ve İngilizce yanıtlar<br>
@@ -34,7 +36,11 @@
   üzerinden düzenlenir. Asistan bilinmeyen konularda cevap üretmez.
 </p>
 
-<h2 align="center">Sonraki aşama hedefleri</h2>
+<div align="center">
+  <samp>━━━━━━━━━━━━━━━━━━━━━━━</samp>
+  <h3>Sonraki aşama hedefleri</h3>
+  <samp>━━━━━━━━━━━━━━━━━━━━━━━</samp>
+</div>
 
 <p align="center">
   Anlamsal arama ve daha güçlü niyet eşleştirmesi<br>
@@ -48,5 +54,9 @@
 </p>
 
 <p align="center">
-  <img src="./public/assets/signature.png" width="180" alt="Mert Sürücü imzası">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./public/assets/signature-white.png">
+    <source media="(prefers-color-scheme: light)" srcset="./public/assets/signature.png">
+    <img src="./public/assets/signature.png" width="180" alt="Mert Sürücü imzası">
+  </picture>
 </p>
