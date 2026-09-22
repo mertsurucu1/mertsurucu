@@ -20,6 +20,7 @@ const cases = [
   ["tr", "iletişim", "contact"],
   ["tr", "firebase", "databases"],
   ["tr", "figma", "design_tools"],
+  ["tr", "avrasya kongresi", "certificates"],
   ["en", "school life", "education_overview"],
   ["en", "which university did Mert graduate from", "bachelor_school"],
   ["en", "what was Mert's major", "bachelor_degree"],
@@ -77,6 +78,30 @@ test("normalization handles Turkish, punctuation and technical names", () => {
 test("knowledge schema has unique stable topic IDs", () => {
   assert.equal(validateKnowledgeBase(knowledge).topics.length, 40);
   assert.equal(new Set(knowledge.topics.map((topic) => topic.id)).size, 40);
+});
+
+test("certificate replies include the 2026 congress participation certificate", () => {
+  const turkish = retriever.retrieve("Mert’in sertifikaları nelerdir?", "tr")?.answer;
+  const english = retriever.retrieve("Which certificates does Mert have?", "en")?.answer;
+
+  assert.match(turkish, /5\. Uluslararası Avrasya/u);
+  assert.match(turkish, /19–20 Eylül 2026/u);
+  assert.match(english, /5th International Eurasian/u);
+  assert.match(english, /19–20 Sep 2026/u);
+});
+
+test("certificate replies preserve full descriptions and chronological order", () => {
+  const turkish = retriever.retrieve("Mert’in sertifikaları nelerdir?", "tr")?.answer;
+  const english = retriever.retrieve("Which certificates does Mert have?", "en")?.answer;
+
+  assert.match(turkish, /“Versiyon Kontrol: Git ve GitHub”/u);
+  assert.match(turkish, /“ProQuest Yazar Çalıştayı”/u);
+  assert.match(turkish, /“Road to Entrepreneurship”/u);
+  assert.match(english, /BTK Academy Course Participation Certificate \(Online\)/u);
+  assert.doesNotMatch(turkish, /Yüz Yüze/u);
+  assert.doesNotMatch(english, /On-site/u);
+  assert.ok(turkish.indexOf("04.03.2024") < turkish.indexOf("19–20 Eylül 2026"));
+  assert.ok(english.indexOf("04.03.2024") < english.indexOf("19–20 Sep 2026"));
 });
 
 test("rejects malformed knowledge data", () => {

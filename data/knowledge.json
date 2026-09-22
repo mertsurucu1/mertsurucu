@@ -1835,7 +1835,12 @@
           "atölye",
           "git eğitimi",
           "unity eğitimi",
-          "yapay zekâ etiği"
+          "yapay zekâ etiği",
+          "avrasya kongresi",
+          "bilimsel araştırma kongresi",
+          "sözlü sunum",
+          "teknik sunum",
+          "kongre katılım sertifikası"
         ],
         "en": [
           "certificate",
@@ -1847,7 +1852,12 @@
           "workshop",
           "git training",
           "unity training",
-          "ai ethics"
+          "ai ethics",
+          "eurasian congress",
+          "scientific research congress",
+          "oral presentation",
+          "technical presentation",
+          "congress participation certificate"
         ]
       },
       "questions": {
@@ -1861,17 +1871,22 @@
           "Unity eğitimi aldı mı?",
           "Oyun geliştirme atölyesine katıldı mı?",
           "Yapay zekâ etiği eğitimi aldı mı?",
-          "Eğitimlerin tarihleri nelerdir?"
+          "Eğitimlerin tarihleri nelerdir?",
+          "Mert 5. Uluslararası Avrasya Bilimsel Araştırma ve İnovasyon Kongresi’ne katıldı mı?",
+          "Mert’in kongre katılım sertifikası var mı?",
+          "Mert hangi bildiriyle sözlü sunum yaptı?"
         ],
         "en": [
           "Which certificates does Mert have?",
           "Which courses has Mert completed?",
-          "Has Mert attended AI ethics or Unity training?"
+          "Has Mert attended AI ethics or Unity training?",
+          "Did Mert attend the 5th International Eurasian Scientific Research and Innovation Congress?",
+          "Which paper did Mert present at the congress?"
         ]
       },
       "answers": {
-        "tr": "Mert’in katıldığı eğitimler şunlardır:\n• Git ve GitHub — 4 Mayıs 2024\n• C# Programlama — 30 Ağustos 2025\n• Unity ile Oyun Geliştirme — 28 Eylül 2025\n• Yapay Zekâ ve Yapay Zekânın Etik Kullanımı 101 — 11 Şubat 2026",
-        "en": "Mert holds participation certificates in Web of Science (04 Mar 2024), Git and GitHub (04 May 2024), ProQuest (26 Nov 2024), entrepreneurship (26 Dec 2024), information technologies (04 May 2025), C# (30 Aug 2025), Unity game development (28 Sep 2025) and ethical AI use (11 Feb 2026)."
+        "tr": "Mert’in katıldığı eğitimler ve aldığı katılım sertifikaları şunlardır:\n• “Web of Science Core Collection” Web Semineri Katılım Sertifikası (Online) — 04.03.2024\n• “Versiyon Kontrol: Git ve GitHub” — BTK Akademi Kurs Katılım Sertifikası (Online) — 04.05.2024\n• “ProQuest Yazar Çalıştayı” Web Semineri Katılım Sertifikası (Online) — 26.11.2024\n• “Road to Entrepreneurship” — Lokman Hekim Üniversitesi Kurs Katılım Sertifikası — 26.12.2024\n• “Bilişim Teknolojilerine Giriş” — BTK Akademi Kurs Katılım Sertifikası (Online) — 04.05.2025\n• “C# Programlama” — BTK Akademi Kurs Katılım Sertifikası (Online) — 30.08.2025\n• “Unity ile Oyun Geliştirme Kursu” — BTK Akademi Kurs Katılım Sertifikası — 28.09.2025\n• “Yapay Zekâ ve Yapay Zekânın Etik Kullanımı 101” Kurs Katılım Sertifikası (Online) — 11.02.2026\n• 5. Uluslararası Avrasya Bilimsel Araştırma ve İnovasyon Kongresi, sözlü ve teknik sunum katılım sertifikası — 19–20 Eylül 2026, Ankara/Türkiye\nSunulan bildiri: “Comparison of Small Language Models on Turkish Crowdfunding Data: Language Alignment, Domain-Specific Training with LoRA, and the Performance Gap to Large Language Models.”",
+        "en": "Mert holds the following participation certificates:\n• “Web of Science Core Collection” Webinar Participation Certificate (Online) — 04.03.2024\n• “Version Control: Git and GitHub” — BTK Academy Course Participation Certificate (Online) — 04.05.2024\n• “ProQuest Author Workshop” Webinar Participation Certificate (Online) — 26.11.2024\n• “Road to Entrepreneurship” — Lokman Hekim University Course Participation Certificate — 26.12.2024\n• “Introduction to Information Technologies” — BTK Academy Course Participation Certificate (Online) — 04.05.2025\n• “C# Programming” — BTK Academy Course Participation Certificate (Online) — 30.08.2025\n• “Game Development Course with Unity” — BTK Academy Course Participation Certificate — 28.09.2025\n• “Artificial Intelligence and Ethical Use of Artificial Intelligence 101” Course Participation Certificate (Online) — 11.02.2026\n• 5th International Eurasian Scientific Research and Innovation Congress, oral and technical presentation — 19–20 Sep 2026, Ankara/Türkiye\nPresented paper: “Comparison of Small Language Models on Turkish Crowdfunding Data: Language Alignment, Domain-Specific Training with LoRA, and the Performance Gap to Large Language Models.”"
       },
       "source": "CV · Sertifikalar"
     },
